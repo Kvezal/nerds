@@ -119,13 +119,10 @@ input[name="toggle"] {
 }
 
 .column-right {
-  width: 760px;
-}
-
-.sorting-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 78px;  
+  width: 760px;
 }
 
 .sorting-text {
@@ -157,8 +154,6 @@ input[name="toggle"] {
 
 /*Конец содержимого <main> каталога*/
 
-
-
 .main-footer {
   position: relative;
   
@@ -171,9 +166,16 @@ input[name="toggle"] {
   min-height: 416px;
 }
 
+.footer-contacts-wrapper {
+  position: relative;
+  width: 1160px;
+  height: 416px;
+  margin: 0 auto;
+}
+
 .footer-contacts {
   position: absolute;
-  top: -362px;
+  top: 54px;
   
   box-sizing: border-box;
   width: 319px;
