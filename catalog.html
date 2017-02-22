@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds | Каталог</title>
+  </head>
+  
+  <body>
+    <header class="main-header">
+      <a class="logo" href="#">
+        <img src="" alt="">
+      </a>
+      
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="nav-list">
+            <a class="nav-link" href="#">Студия</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#">Клиенты</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#">Магазин</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="user-block">
+        <a class="cart" href="#"></a>
+      </div>
+      
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-group">
+          <legend class="filter-name">Стоимость:</legend>
+          <div class="price-range">
+            <div class="price-range-main-scale"></div>
+            <div class="price-range-diapason"></div>
+            <div class="price-range-low"></div>
+            <div class="price-range-high"></div>
+          </div>
+          <div class="price-control">
+            <label for="min-price-field">От</label>
+            <input type="text" name="min-price" id="min-price-field">
+            <label class="max-price-field">До</label>
+            <input type="text" name="max-price" id="max-price-field">
+          </div>          
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-name">Сетка:</legend>
+          <p>
+            <input type="radio" name="toggle-grid" id="toggle-grid-1" checked>
+            <label for="toggle-grid-1">Адаптивная</label>
+          </p>
+          <p>
+            <input type="radio" name="toggle-grid" id="toggle-grid-2">
+            <label for="toggle-grid-2">Фиксированная</label>
+          </p>
+          <p>
+            <input type="radio" name="toggle-grid" id="toggle-grid-3">
+            <label for="toggle-grid-3">Резиновая</label>
+          </p>  
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-name">Особенности:</legend>
+          <p>
+            <input type="checkbox" name="slider" id="slider-field" checked>          
+            <label for="slider-field">Слайдер</label>
+          </p>
+          <p>
+            <input type="checkbox" name="advantages" id="advantages-field">
+            <label for="advantages-field">Блок преимуществ</label>
+          </p>
+          <p>
+            <input type="checkbox" name="news" id="news-field">
+            <label for="news-field">Новости</label>
+          </p>
+          <p>
+            <input type="checkbox" name="gellery" id="gellery-field">
+            <label for="gellery-field">Галерея</label>
+          </p>
+          <p>
+            <input type="checkbox" name="basket" id="basket-field">
+            <label for="basket-field">Корзина</label>
+          </p>
+        </fieldset>
+        <button class="btn btn-filter" type="submit">Показать</button>
+      </form>
+      <div class="column-right">
+        <section class="sorting">
+          <h2>Сортировать:</h2>
+          <ul class="sorting">
+            <li><a class="sorting-price" href="#">По цене</a></li>
+            <li><a class="sorting-type" href="#">По типу</a></li>
+            <li><a class="sorting-name" href="#">По названию</a></li>
+            <li><a class="sorting-increase">По возрастанию</a></li>
+            <li><a class="sorting-decrease">По убыванию</a></li>
+          </ul>
+          
+          <section class="catalog">
+            <article class="catalog-item">
+              <img scr="" alt="Седона">
+              <div class="catalog-item-price">
+                <h2 class="catalog-item-title">Sedona</h2>
+                <p class="catalog-item-text">Информационный сайт для туристов</p>
+                <a class="btn btn-catalog" href="#">9900</a>
+              </div>
+            </article>
+            
+            <article class="catalog-item">
+              <img src="" alt="">
+              <div class="catalog-item-price">
+                <h2 class="catalog-item-title">Pink app</h2>
+                <p class="catalog-item-text">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="btn btn-catalog" href="#">9900</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="" alt="">
+              <div class="catalog-item-price">
+                <h2 class="catalog-item-title">Barbershop</h2>
+                <p class="catalog-item-text">Сайт салоны красоты.Для мужчин, да.</p>
+                <a class="btn btn-catalog" href="#">9900</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="" alt="">
+              <div class="catalog-item-price">
+                <h2 class="catalog-item-title">Mishka</h2>
+                <p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
+                <a class="btn btn-catalog" href="#">9900</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="" alt="">
+              <div class="catalog-item-price">
+                <h2 class="catalog-item-title">A plus</h2>
+                <p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
+                <a class="btn btn-catalog" href="#">9900</a>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <img src="" alt="">
+              <div class="catalog-item-price">
+                <h2 class="catalog-item-title">Кваст</h2>
+                <p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
+                <a class="btn btn-catalog" href="#">9900</a>
+              </div>
+            </article>
+          </section>
+          
+          <div class="pagination">
+            <a class="current" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
+          </div>          
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <h2 class="contact-title">NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn" href="#">Напишите нам</a>
+      </section>
+      
+      <div class="map"></div>
+      <div class="social-wrapper">
+        <p class="footer-social">
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+        </p>      
+        <p class="footer-discount">
+          <span>Давайте дружить, это выгодно!</span>
+          Скидки 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
+    
+    <form class="modal-feedback">
+      <button class="close" type="button"></button>
+      <h2 class="feedback-title">Напишите нам</h2>
+      <div class="wrapper">
+        <label for="feedback-name-field">Ваше имя:</label>
+        <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="wrapper">
+        <label for="feedback-email-field">Ваш e-mail:</label>
+        <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Для отправки ответа">
+      </div> 
+      <div class="wrapper">     
+        <label for="feedback-letter-field">Текст письма:</label>
+        <textarea name="feedback-letter" id="feedback-letter-field">В свободной форме</textarea>
+      </div>
+      <button class="button" type="button">Отправить</button>
+    </form>
+  </body>
+</html>
