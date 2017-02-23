@@ -29,11 +29,11 @@ body {
 .main-navigation {
   width: 540px;
   min-height: 65px;
-  margin: 0 150px;
+  margin: 0 50px 0 150px;
 }
 
 .user-block {
-  width: 160px;
+  width: 260px;
   min-height: 65px;
   margin-right: auto;
 }
@@ -81,7 +81,6 @@ input[name="toggle"] {
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
-  padding-top: 80px;
   
   border-top: 2px solid #eeeeee;
 }
@@ -89,11 +88,13 @@ input[name="toggle"] {
 .description {
   width: 660px;
   min-height: 450px;
+  padding-top: 80px;
 }
 
 .advantages {
   width: 360px;
   min-height: 450px;
+  padding-top: 40px;
 }
 
 .clients {
@@ -103,8 +104,13 @@ input[name="toggle"] {
 }
 
 .client {
+  display: flex;
   width: 260px;
   height: 180px;
+}
+
+.client img {
+  margin: auto;
 }
 
 /*Начало содержимое <main> каталога*/
@@ -141,9 +147,20 @@ input[name="toggle"] {
 }
 
 .catalog-item {
+  position: relative;
+  
   width: 360px;
   min-height: 616px;
   margin-bottom: 36px;
+}
+
+.catalog-item-price {
+  position: absolute;
+  bottom: 0;
+  
+  width: 100%;
+  
+  background-color: #eeeeee;
 }
 
 .pagination {
@@ -168,7 +185,7 @@ input[name="toggle"] {
 
 .footer-contacts-wrapper {
   position: relative;
-  width: 1160px;
+  max-width: 1160px;
   height: 416px;
   margin: 0 auto;
 }
