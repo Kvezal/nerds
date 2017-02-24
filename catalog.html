@@ -46,12 +46,12 @@
           </div>
           <div class="price-control">
             <label for="min-price-field">От</label>
-            <input type="text" name="min-price" id="min-price-field">
+            <input type="text" name="min-price" id="min-price-field" value="0">
             <label class="max-price-field">До</label>
-            <input type="text" name="max-price" id="max-price-field">
+            <input type="text" name="max-price" id="max-price-field"  value="15 000">
           </div>          
         </fieldset>
-        <fieldset class="filter-group">
+        <fieldset class="filter-group filter-grid">
           <legend class="filter-name">Сетка:</legend>
           <p>
             <input type="radio" name="toggle-grid" id="toggle-grid-1" checked>
@@ -66,7 +66,7 @@
             <label for="toggle-grid-3">Резиновая</label>
           </p>  
         </fieldset>
-        <fieldset class="filter-group">
+        <fieldset class="filter-group filter-features">
           <legend class="filter-name">Особенности:</legend>
           <p>
             <input type="checkbox" name="slider" id="slider-field" checked>          
@@ -94,18 +94,21 @@
       <div class="column-right">
         <span class="sorting-text">Сортировать:</span>
         <ul class="sorting-list">
-          <li><a class="sorting-price" href="#">По цене</a></li>
-          <li><a class="sorting-type" href="#">По типу</a></li>
-          <li><a class="sorting-name" href="#">По названию</a></li>
-          <li><a class="sorting-increase">По возрастанию</a></li>
-          <li><a class="sorting-decrease">По убыванию</a></li>
+          <li class="sort-item"><a class="sort-link" href="#">По цене</a></li>
+          <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
+          <li class="sort-item"><a class="sort-link" href="#">По названию</a></li>
+          <li class="sort-item"><a class="sort-link sort-increase" href="#">По возрастанию</a></li>
+          <li class="sort-item"><a class="sort-link sort-decrease" href="#">По убыванию</a></li>
         </ul>
         <section class="catalog">
           <article class="catalog-item">
             <img src="img/catalog-item1-sedona.jpg" width="360" height="616" alt="Sedona">
             <div class="catalog-item-price">
               <h2 class="catalog-item-title">Sedona</h2>
-              <p class="catalog-item-text">Информационный сайт для туристов</p>
+              <p class="catalog-item-text">
+                Информационный сайт<br>
+                для туристов
+              </p>
               <a class="btn btn-catalog" href="#">9900</a>
             </div>
           </article>
@@ -114,7 +117,10 @@
             <img src="img/catalog-item2-pink.jpg" width="360" height="616" alt="Pink app">
             <div class="catalog-item-price">
               <h2 class="catalog-item-title">Pink app</h2>
-              <p class="catalog-item-text">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="catalog-item-text">
+                Продуктовый лендинг<br>
+                приложения для iOS и Android
+              </p>
               <a class="btn btn-catalog" href="#">9900</a>
             </div>
           </article>
@@ -122,7 +128,10 @@
             <img src="img/catalog-item3-barbershop.jpg" width="360" height="616" alt="Barbershop">
             <div class="catalog-item-price">
               <h2 class="catalog-item-title">Barbershop</h2>
-              <p class="catalog-item-text">Сайт салоны красоты.Для мужчин, да.</p>
+              <p class="catalog-item-text">
+                Сайт салоны красоты.<br>
+                Для мужчин, да.
+              </p>
               <a class="btn btn-catalog" href="#">9900</a>
             </div>
           </article>
@@ -130,7 +139,10 @@
             <img src="img/catalog-item4-mishka.jpg" width="360" height="616" alt="Mishka">
             <div class="catalog-item-price">
               <h2 class="catalog-item-title">Mishka</h2>
-              <p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
+              <p class="catalog-item-text">
+                Интернет-магазин<br>
+                вязаных игрушек
+              </p>
               <a class="btn btn-catalog" href="#">9900</a>
             </div>
           </article>
@@ -138,7 +150,10 @@
             <img src="img/catalog-item5-aplus.jpg" width="360" height="616" alt="A plus">
             <div class="catalog-item-price">
               <h2 class="catalog-item-title">A plus</h2>
-              <p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
+              <p class="catalog-item-text">
+                Лендинг курсов повышения<br> 
+                квалификации
+              </p>
               <a class="btn btn-catalog" href="#">9900</a>
             </div>
           </article>
@@ -146,7 +161,10 @@
             <img src="img/catalog-item6-kvast.jpg" width="360" height="616" alt="Кваст">
             <div class="catalog-item-price">
               <h2 class="catalog-item-title">Кваст</h2>
-              <p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
+              <p class="catalog-item-text">
+                Промо-сайт производителя<br>
+                крафтового кваса
+              </p>
               <a class="btn btn-catalog" href="#">9900</a>
             </div>
           </article>
@@ -156,7 +174,7 @@
           <a class="current" href="#">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
-          <a href="#">Следующая</a>
+          <a class="next" href="#">Следующая</a>
         </div>   
       </div>
     </main>
