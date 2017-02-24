@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  font-family: 'Roboto', 'Arial', sans-serif;
   color: #283136;
  
   background-color: #ffffff;
@@ -18,6 +19,8 @@ body {
   flex-wrap: wrap;
   margin-bottom: 53px;
   padding-top: 49px;
+  
+  background-color: #eeeeee;
 }
 
 .logo {
@@ -27,36 +30,250 @@ body {
 }
 
 .main-navigation {
-  width: 540px;
+  width: 485px;
   min-height: 65px;
-  margin: 0 50px 0 150px;
+  margin: 0 77px 0 178px;
+}
+
+.site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 26px 0 0;
+  
+  list-style: none;  
+}
+
+.nav-item {  
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;  
 }
 
 .user-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
   width: 260px;
   min-height: 65px;
   margin-right: auto;
+  padding-top: 9px;
 }
+
+.cart {
+  position: relative;
+  
+  padding-left: 40px;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+} 
+
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  
+  width: 15px;
+  height: 15px;
+  
+  background: url(../img/sprites.png) 0 0;
+  opacity: .3;
+}
+
+/*Начало кода слайдера*/
 
 .slider {
+  position: relative;
+  
   width: 1160px;
-  min-height: 431px;
+  min-height: 424px;
   margin: 0 auto;
+  
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+  background-position:  bottom right 31px;
+  
+  transition-duration: .6s;
 }
 
-/*Начало содержимого <header> на странице каталога*/
-
-.main-title {
-  width: 1160px;
-  min-height: 241px;
-  margin: 0 auto;
+.slider::before,
+.slider::after {
+  content: "";
+  
+  visibility: hidden;
 }
 
-/*Конец содержимого <header> на странице каталога*/
+.slider::before {
+  background-image: url(../img/slide2.png);
+}
+
+.slider::after {
+  background-image: url(../img/slide3.png);
+}
 
 input[name="toggle"] {
   display: none;
 }
+
+.slider-control {
+  position: absolute;
+  top: 310px;
+  left: 536px;
+}
+
+.slider-control label {
+  position: relative;
+  margin-right: 35px;
+}
+
+.slider-control label::before {
+  content: "";
+  position: absolute;
+  
+  width: 18px;
+  height: 18px;
+  
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-control label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  
+  width: 4px;
+  height: 4px;
+  
+  background: #ffffff;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  
+  transition-duration: .4s;
+  transition-property: opacity;
+} 
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  margin: 71px 0 26px;
+  
+  font-weight: ;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.slide1 .slide-title {
+  width: 400px;
+}
+
+.slide2 .slide-title {
+  width: 550px;
+}
+
+.slide3 .slide-title {
+  width: 450px;
+}
+
+.slide2 p {
+  width: 430px;
+}
+
+.slide3 p {
+  width: 350px;
+}
+
+.btn {
+  display: inline-block;  
+  padding: 17px 54px 15px;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  border-radius: 3px;
+}
+
+.slide-btn {
+  box-sizing: border-box;
+  min-width: 240px;
+  min-height: 50px;
+  margin-top: 39px;
+  
+  background-color: #fb565a;
+}
+
+#btn-1:checked ~ .slider {
+  background-image: url(../img/slide1.png);
+}
+
+#btn-2:checked ~ .slider {
+  background-image: url(../img/slide2.png);
+  background-position: bottom right;
+}
+
+#btn-3:checked ~ .slider {
+  background-image: url(../img/slide3.png);
+  background-position: bottom right;
+}
+
+#btn-1:checked ~ .slider label[for="btn-1"]::after,
+#btn-2:checked ~ .slider label[for="btn-2"]::after,
+#btn-3:checked ~ .slider label[for="btn-3"]::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+#btn-1:checked ~ .slider .slide1,
+#btn-2:checked ~ .slider .slide2,
+#btn-3:checked ~ .slider .slide3 {
+  display: block;
+}
+
+/*Конец кода слайдера*/
+
+/*Начало содержимого <header> на странице каталога*/
+
+.main-title {
+  box-sizing: border-box;
+  width: 1160px;
+  min-height: 234px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-left: 215px;
+  
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+/*Конец содержимого <header> на странице каталога*/
 
 .content {
   box-sizing: border-box;
@@ -217,10 +434,28 @@ input[name="toggle"] {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======================================
  Системное оформление - не изменять
 =======================================*/
 
+/*
 body {
   padding: 3px;
 }
@@ -251,4 +486,4 @@ body > * > * > * > * {
   background: rgba(255, 110, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(255, 110, 45);
 
-}
+}*/
