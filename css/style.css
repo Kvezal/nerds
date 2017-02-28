@@ -15,15 +15,20 @@ body {
 }
 
 .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  min-width: 1160px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 1200px;
   padding-top: 49px;
   
   background-color: #eeeeee;
 }
 
 .menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -34,7 +39,9 @@ body {
   min-height: 65px;
   margin-left: auto;
   
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  
+          transition-duration: .2s;
 }
 
 .logo img {
@@ -56,6 +63,8 @@ body {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 26px 0 0;
@@ -64,9 +73,14 @@ body {
 }
 
 .nav-item {  
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-flex: 1;  
+      -ms-flex-positive: 1;  
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 23px;
   
   text-align: center;
@@ -82,7 +96,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  
+          transition-duration: .2s;
 }
 
 .nav-link:hover:not(.active) {
@@ -124,7 +140,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  
+          transition-duration: .2s;
   
 } 
 
@@ -133,7 +151,8 @@ body {
 }
 
 .cart span {
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 .cart:active:not(.active) span {
@@ -167,7 +186,9 @@ body {
   background-repeat: no-repeat;
   background-position:  bottom right 31px;
   
-  transition-duration: .6s;
+  -webkit-transition-duration: .6s;
+  
+          transition-duration: .6s;
 }
 
 .slider::before,
@@ -222,7 +243,10 @@ input[name="toggle"] {
   visibility: hidden;
   opacity: 0;
   
-  transition-duration: .9s;
+  -webkit-transition-duration: .9s;
+  
+          transition-duration: .9s;
+  -webkit-transition-property: opacity;
   transition-property: opacity;
 } 
 
@@ -274,7 +298,9 @@ input[name="toggle"] {
   background-color: #fb565a;
   border-radius: 3px;
   
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  
+          transition-duration: .2s;
 }
 
 .btn:hover {
@@ -326,7 +352,7 @@ input[name="toggle"] {
 
 /*Конец кода слайдера*/
 
-/*Начало содержимого <header> на странице каталога*/
+/*Начало содержимого  на странице каталога*/
 
 .main-title {
   box-sizing: border-box;
@@ -342,7 +368,7 @@ input[name="toggle"] {
   color: #000000;
 }
 
-/*Конец содержимого <header> на странице каталога*/
+/*Конец содержимого  на странице каталога*/
 
 .content {
   box-sizing: border-box;
@@ -354,6 +380,8 @@ input[name="toggle"] {
 }
 
 .features {  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
   margin-bottom: 80px;
   padding-top: 27px;
@@ -418,8 +446,13 @@ input[name="toggle"] {
 }
 
 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 1160px;
   
   border-top: 2px solid #eeeeee;
 }
@@ -488,6 +521,8 @@ input[name="toggle"] {
 }
 
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -518,8 +553,13 @@ input[name="toggle"] {
 }
 
 .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 1160px;
   margin-bottom: 80px;
   
   border-top: 2px solid #eeeeee;
@@ -536,7 +576,9 @@ input[name="toggle"] {
   
   opacity: .2;
   
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  
+          transition-duration: .3s;
 }
 
 .client:hover {
@@ -584,11 +626,15 @@ input[name="toggle"] {
   display: none;
 }
 
-/*Начало содержимого <main> каталога*/
+/*Начало содержимого  каталога*/
 
 .inner-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .filter {
@@ -675,6 +721,8 @@ input[name="toggle"] {
 }
 
 .price-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 14px;
   margin-bottom: 30px;
@@ -685,7 +733,9 @@ input[name="toggle"] {
 
 .price-control label {
   margin-right: 12px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .price-control input {
@@ -750,7 +800,9 @@ input[name="toggle"] {
   border: 3px solid #283136;
   opacity: .4;
   
-  transition-duration: .4s;
+  -webkit-transition-duration: .4s;
+  
+          transition-duration: .4s;
 }
 
 .filter-grid label:hover::before {
@@ -768,7 +820,9 @@ input[name="toggle"] {
   visibility: hidden;
   opacity: 0;
   
-  transition-duration: .4s;
+  -webkit-transition-duration: .4s;
+  
+          transition-duration: .4s;
 } 
 
 .filter-grid label:hover::after,
@@ -826,7 +880,9 @@ input[name="toggle"] {
   border-radius: 5px;
   opacity: .4;
   
-  transition-duration: .4s;
+  -webkit-transition-duration: .4s;
+  
+          transition-duration: .4s;
 }
 
 .filter-features input:checked + label::before,
@@ -883,9 +939,14 @@ input[name="toggle"] {
 }
 
 .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 760px;
   padding-top: 4px;
 }
@@ -901,6 +962,8 @@ input[name="toggle"] {
 }
 
 .sorting-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 360px;
   margin: 0;
@@ -923,7 +986,9 @@ input[name="toggle"] {
   
   opacity: .3;
   
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  
+          transition-duration: .2s;
 }
 
 .sort-link:hover {  
@@ -969,9 +1034,14 @@ input[name="toggle"] {
 }
 
 .catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 760px;
   margin-top: 52px;
   margin-bottom: 24px;
@@ -994,7 +1064,9 @@ input[name="toggle"] {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  
+          transition-duration: .3s;
 }
 
 .catalog-item:hover {
@@ -1012,9 +1084,16 @@ input[name="toggle"] {
 }
 
 .catalog-item-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 0;
   
@@ -1028,7 +1107,9 @@ input[name="toggle"] {
   visibility: hidden;
   opacity: 0;
   
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  
+          transition-duration: .3s;
 }
 
 .catalog-item:hover .catalog-item-price {
@@ -1037,7 +1118,11 @@ input[name="toggle"] {
 }
 
 .catalog-item-title {
-  font-weight: ;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -1055,6 +1140,8 @@ input[name="toggle"] {
 }
 
 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 460px;
   height: 50px;
@@ -1062,7 +1149,10 @@ input[name="toggle"] {
 }
 
 .pagination a {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: block;
   box-sizing: border-box;
   min-width: 50px;
@@ -1079,7 +1169,9 @@ input[name="toggle"] {
   background-color: #eeeeee;
   border-radius: 3px;
   
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  
+          transition-duration: .2s;
 }
 
 .pagination a:hover:not(.current) {
@@ -1105,25 +1197,36 @@ input[name="toggle"] {
   min-width: 260px;
 }
 
-/*Конец содержимого <main> каталога*/
+/*Конец содержимого  каталога*/
 
 .main-footer {
   position: relative;
   
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 1200px;
 }
 
 .map {
   width: 100%;
+  min-width: 1200px;
   min-height: 416px;
 }
 
 .footer-wrapper {
   position: relative;
   
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
   display: flex;
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -1159,6 +1262,8 @@ input[name="toggle"] {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
   width: 360px;
@@ -1175,7 +1280,10 @@ input[name="toggle"] {
   background: #e1e1e1 url(../img/sprites.png) no-repeat;
   border-radius: 50%;
   
-  transition-duration: .4s;
+  -webkit-transition-duration: .4s;
+  
+          transition-duration: .4s;
+  -webkit-transition-property: background-color, box-shadow;
   transition-property: background-color, box-shadow;
 }
 
@@ -1238,10 +1346,19 @@ input[name="toggle"] {
   top: 50%;
   left: 50%;
   
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   box-sizing: border-box;
   width: 960px;
   padding: 67px 100px 84px;
@@ -1250,24 +1367,33 @@ input[name="toggle"] {
   
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .75);  
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);  
+          transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
+  
+  -webkit-transition: .7s;
   
   transition: .7s;
 }
 
 .show {
   visibility: visible;
-  animation-name: show;
-  animation-duration: .7s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hide {
-  animation-name: hide;
-  animation-duration: .7s;
-  animation-fill-mode: forwards;  
+  -webkit-animation-name: hide;
+          animation-name: hide;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;  
 }
 
 .close {
@@ -1283,8 +1409,10 @@ input[name="toggle"] {
 }
 
 .hide {
-  animation-name: hide;
-  animation-duration: .6s;
+  -webkit-animation-name: hide;
+          animation-name: hide;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
 }
 
 .close::before,
@@ -1300,7 +1428,9 @@ input[name="toggle"] {
   background-color: #fecccd;
   border-radius: 2px;
   
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  
+          transition-duration: .3s;
 }
 
 .close:hover::before,
@@ -1314,11 +1444,13 @@ input[name="toggle"] {
 }
 
 .close::before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .close::after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .feedback-title {
@@ -1373,7 +1505,9 @@ input[name="toggle"] {
   border-radius: 3px;
   outline: none;
   
-  transition-duration: .3s;  
+  -webkit-transition-duration: .3s;
+  
+          transition-duration: .3s;  
 }
 
 .modal-feedback input:hover,
@@ -1412,79 +1546,86 @@ input[name="toggle"] {
   border-radius: 4px;
 }
 
-@keyframes show {
+@-webkit-keyframes show {
   from {
-    transform: translate(100%, 50%) skewX(35deg);
+    -webkit-transform: translate(100%, 50%) skewX(35deg);
+            transform: translate(100%, 50%) skewX(35deg);
   }
   
   70% {
-    transform: translate(-50%, -50%) skewX(35deg);
+    -webkit-transform: translate(-50%, -50%) skewX(35deg);
+            transform: translate(-50%, -50%) skewX(35deg);
   }
   
   80% {
-    transform: translate(-50%, -50%) skewX(-25deg);
+    -webkit-transform: translate(-50%, -50%) skewX(-25deg);
+            transform: translate(-50%, -50%) skewX(-25deg);
   }
   
   90% {
-    transform: translate(-50%, -50%) skewX(10deg);
+    -webkit-transform: translate(-50%, -50%) skewX(10deg);
+            transform: translate(-50%, -50%) skewX(10deg);
   }
   
   to {    
     opacity: 1;
-    transform: translate(-50%, -50%) skewX(0);
+    -webkit-transform: translate(-50%, -50%) skewX(0);
+            transform: translate(-50%, -50%) skewX(0);
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: translate(100%, 50%) skewX(35deg);
+            transform: translate(100%, 50%) skewX(35deg);
+  }
+  
+  70% {
+    -webkit-transform: translate(-50%, -50%) skewX(35deg);
+            transform: translate(-50%, -50%) skewX(35deg);
+  }
+  
+  80% {
+    -webkit-transform: translate(-50%, -50%) skewX(-25deg);
+            transform: translate(-50%, -50%) skewX(-25deg);
+  }
+  
+  90% {
+    -webkit-transform: translate(-50%, -50%) skewX(10deg);
+            transform: translate(-50%, -50%) skewX(10deg);
+  }
+  
+  to {    
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) skewX(0);
+            transform: translate(-50%, -50%) skewX(0);
+  }
+}
+
+@-webkit-keyframes hide {
+  from {    
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) skewX(0);
+            transform: translate(-50%, -50%) skewX(0);
+  }
+  
+  to {
+  opacity: 0;
+    -webkit-transform: translate(150%, -150%) skewX(-35deg);
+            transform: translate(150%, -150%) skewX(-35deg);
   }
 }
 
 @keyframes hide {
   from {    
     opacity: 1;
-    transform: translate(-50%, -50%) skewX(0);
+    -webkit-transform: translate(-50%, -50%) skewX(0);
+            transform: translate(-50%, -50%) skewX(0);
   }
   
   to {
   opacity: 0;
-    transform: translate(150%, -150%) skewX(-35deg);
+    -webkit-transform: translate(150%, -150%) skewX(-35deg);
+            transform: translate(150%, -150%) skewX(-35deg);
   }
 }
-
-
-
-
-/*======================================
- Системное оформление - не изменять
-=======================================*/
-
-
-/*
-body {
-  padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
-}
-
-body > * > * > * > * {
-  background: rgba(255, 110, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(255, 110, 45);
-
-}
-*/
