@@ -21,3 +21,25 @@ btnClose.addEventListener('click', function(event) {
   }  
     console.log(3);
 });
+
+
+
+ymaps.ready(function() {
+  var myMap = new ymaps.Map('map', {
+      center: [59.938536, 30.3224549],
+      zoom: 16
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Nёrds',
+      balloonContent: 'Сделаем качественно'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/map_marker.png',
+      iconImageSize: [231, 190],
+      iconImageOffset: [-28, -195]
+    });
+  myMap.behaviors.disable('scrollZoom');
+  myMap.geoObjects.add(myPlacemark);
+});
