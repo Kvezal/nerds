@@ -16,9 +16,9 @@ btnClose.addEventListener('click', function(event) {
   event.preventDefault();
   if (modal.classList.contains('show')) {
     modal.classList.remove('show');
-    modal.classList.add('hide');    
+    modal.classList.add('hide');
     console.log(2);
-  }  
+  }
     console.log(3);
 });
 
@@ -36,7 +36,7 @@ ymaps.ready(function() {
       balloonContent: 'Сделаем качественно'
     }, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/map_marker.png',
+      iconImageHref: 'https://kvezal.github.io/nerds/img/map_marker.png',
       iconImageSize: [231, 190],
       iconImageOffset: [-28, -195]
     });

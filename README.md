@@ -1,2 +1,0 @@
-# nerds
-nerds
